@@ -107,7 +107,9 @@ This project addresses these issues by offering a contactless gesture-driven aut
 
 ```text
 Gesture-based-secure-file-access-system/
-│
+├── assets/                   # Project screenshots and visual demonstrations
+│   ├── gesture_tracking.png  # Real-time hand landmark detection feed
+│   └── access_granted.png    # Terminal authentication and decrypted file output
 ├── gestolocks.py             # Main gesture recognition, registration & authentication engine
 ├── encrypt_file.py           # Generates encryption key and encrypts plaintext into secret.enc
 ├── decrypt_and_open.py       # Decrypts secret.enc, opens viewer, and deletes temp file after 10s
@@ -286,12 +288,10 @@ The system tracks 21 hand keypoints and calculates whether each finger is open o
 
 ## Screenshots
 
-> *Add visual demonstrations of your project below.*
-
-| Webcam Gesture Tracking | Access Verification Output |
+| Figure 2: Gesture Detection & Tracking | Figure 3: Access Granted & File Opened |
 | :---: | :---: |
-| ![Gesture Recognition Interface](https://via.placeholder.com/500x320?text=Camera+Gesture+Recognition+Feed) | ![Terminal Authentication Status](https://via.placeholder.com/500x320?text=Access+Granted+Terminal+Output) |
-| *Real-time hand landmark mesh and finger counting* | *Authentication check and file decryption workflow* |
+| ![Gesture Detection and Tracking](assets/gesture_tracking.png) | ![Access Granted to Access File](assets/access_granted.png) |
+| *Real-time 21 hand landmarks tracking and 4-step sequence capture (`G1 G1 G5 G0`)* | *Console authentication verification, automatic file decryption, and ephemeral viewer* |
 
 ---
 
